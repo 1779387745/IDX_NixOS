@@ -111,7 +111,7 @@
       # 工作区(重新)启动时运行
       onStart = {
         # 创建配置文件目录
-        init-01-mkdir = "[ -d conf ] || mkdir conf; [ -d conf ] || mkdir sing-box; [ ! -f sing-box/node.txt ] && touch sing-box/node.txt";
+        init-01-mkdir = "[ -d conf ] || mkdir conf; [ -d sing-box ] || mkdir sing-box; [ ! -f sing-box/node.txt ] && touch sing-box/node.txt";
 
         # 检查并创建 nginx 配置
         init-02-nginx = "cat > nginx.conf << EOF
